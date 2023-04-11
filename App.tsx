@@ -31,12 +31,10 @@ type SectionProps = PropsWithChildren<{
 
 function App(): JSX.Element {
   const [isGifLoading, setIsGifLoading] = useState(true);
-  const [arr, setArr] = useState([])
   useEffect(() => {
     setTimeout(() => {
       setIsGifLoading(false)
-      console.log("Loading ...", arr[2])
-      generateTestCrash()
+      console.log("Loading ...")
     }, 10000);
 
    // clearTimeout(oneSec)
